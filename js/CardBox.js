@@ -4,7 +4,7 @@ export class CardBox {
     constructor(id) {
         this.cards = [];
         this.id = id;
-        this.currentCardIndex = 0;
+        // this.currentCardIndex = 0;
 
     }
 
@@ -21,15 +21,15 @@ export class CardBox {
         this.cards = cards;
     }
 
-    getCurrentCard() {
-        return this.cards[this.currentCardIndex];
-    }
+    // getCurrentCard() {
+    //     return this.cards[this.currentCardIndex];
+    // }
 
-    getNextCard() {
-
-    }
-
-    getPreviousCard() {
-
-    }
+    // getNextCard() {
+    //
+    // }
+    //
+    // getPreviousCard() {
+    //
+    // }
 }
