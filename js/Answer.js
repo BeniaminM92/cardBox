@@ -1,4 +1,9 @@
 export class Answer {
+    #id;
+    #text;
+    #correct;
+    #cardId;
+
     /**
      *
      * @param id
@@ -7,41 +12,41 @@ export class Answer {
      * @param correct
      */
     constructor(id, text, cardId, correct) {
-        this._id = id;
-        this._text = text;
-        this._cardId = cardId;
-        this._correct = correct;
+        this.#id = id;
+        this.#text = text;
+        this.#cardId = cardId;
+        this.#correct = correct;
     }
 
     get id() {
-        return this._id;
+        return this.#id;
     }
 
     set id(value) {
-        this._id = value;
+        this.#id = value;
     }
 
     get text() {
-        return this._text;
+        return this.#text;
     }
 
     set text(value) {
-        this._text = value;
+        this.#text = value;
     }
 
     get cardId() {
-        return this._cardId;
+        return this.#cardId;
     }
 
     set cardId(value) {
-        this._cardId = value;
+        this.#cardId = value;
     }
 
     get correct() {
-        return this._correct;
+        return this.#correct;
     }
 
     set correct(value) {
-        this._correct = value;
+        this.#correct = value;
     }
 }

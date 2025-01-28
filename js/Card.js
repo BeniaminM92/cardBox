@@ -1,35 +1,40 @@
 import { Answer } from './Answer.js';
 
 export class Card {
-    constructor(id, question, cardBoxId) {
-        this._id = id;
-        this._question = question;
-        this._cardBoxId = cardBoxId;
-        this.answers = [];
+    #id;
+    #question;
+    #cardBoxId;
+    #answers;
+    
+    constructor(id, question, cardBoxId, answers) {
+        this.#id = id;
+        this.#question = question;
+        this.#cardBoxId = cardBoxId;
+        this.#answers = answers;
     }
 
     get id() {
-        return this._id;
+        return this.#id;
     }
 
     set id(value) {
-        this._id = value;
+        this.#id = value;
     }
 
     get question() {
-        return this._question;
+        return this.#question;
     }
 
     set question(value) {
-        this._question = value;
+        this.#question = value;
     }
 
     get cardBoxId() {
-        return this._cardBoxId;
+        return this.#cardBoxId;
     }
 
     set cardBoxId(value) {
-        this._cardBoxId = value;
+        this.#cardBoxId = value;
     }
 
     get answers() {

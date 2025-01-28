@@ -1,16 +1,17 @@
 import { Card } from './Card.js';
 
 export class CardBox {
-    constructor(id) {
-        this.cards = [];
-        this.id = id;
-        // this.currentCardIndex = 0;
+    #id;
+    #cards;
 
+    constructor(id) {
+        this.#id = id;
+        // this.#cards = [];
     }
 
 
     get id() {
-        return this.id;
+        return this.#id;
     }
 
     set id(value) {
@@ -18,11 +19,10 @@ export class CardBox {
     }
 
     loadCards(cards) {
-        this.cards = cards;
+        this.#cards = cards;
     }
 
     // getCurrentCard() {
-    //     return this.cards[this.currentCardIndex];
     // }
 
     // getNextCard() {
